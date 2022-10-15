@@ -22,12 +22,12 @@ $.gulp.task('default', $.gulp.series(
 ));
 
 $.gulp.task('build', $.gulp.series(
-  $.gulp.parallel('pug', 'sass', 'css-transfer', /*'scripts:lib',*/ 'scripts'),
+  $.gulp.parallel('pug', 'img', 'sass', 'css-transfer', /*'scripts:lib',*/ 'scripts'),
   $.gulp.parallel('watch', 'serve')
 ));
 
 $.gulp.task('deploy', $.gulp.series(
-  $.gulp.parallel('pug', 'sass', 'css-transfer','scripts'),
+  $.gulp.parallel('pug', 'img', 'sass', 'css-transfer','scripts'),
   'ftp'
 ))
 

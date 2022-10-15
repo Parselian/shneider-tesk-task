@@ -1,0 +1,41 @@
+.menu {
+  padding: 17px 0;
+  background-color: $menu-bg-color;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+    &-item {
+      position: relative;
+      font-size: 18px;
+      color: $alt-text-color;
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+
+        &:after {
+          position: absolute;
+          content: '';
+          top: 50%;
+          right: -10px;
+          transform: translateY(-50%);
+          height: 100%;
+          width: 1px;
+          background-color: $alt-text-color;
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

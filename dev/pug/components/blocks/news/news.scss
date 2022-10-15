@@ -1,0 +1,32 @@
+.news {
+  padding: 15px 60px 30px 30px;
+  height: fit-content;
+  color: $alt-text-color;
+  background-color: $news-bg-color;
+  &__title {
+    margin-bottom: 35px;
+    font-family: 'PT Sans', sans-serif, --apple-system;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+  &__list {
+    margin-bottom: 60px;
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      &-date {
+        margin-bottom: 5px;
+        font-style: italic;
+      }
+    }
+  }
+
+  &__more {
+    text-align: right;
+    display: block;
+    color: $alt-text-color;
+    text-decoration: underline;
+  }
+}

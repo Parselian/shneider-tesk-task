@@ -1,0 +1,6 @@
+mixin menu(items)
+    .menu
+        .menu__wrap.container
+            nav.menu__list
+            for item in items
+                a(href=item.link).menu__list-item= item.title

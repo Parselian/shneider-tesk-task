@@ -1,0 +1,13 @@
+.about {
+  margin-bottom: 55px;
+  color: $main-text-color;
+  &__title {
+    margin-bottom: 30px;
+    font-size: 33px;
+  }
+  &__paragraph {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

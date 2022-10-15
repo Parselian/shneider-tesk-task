@@ -1,7 +1,18 @@
 extends ../layouts/main
 
 block mixins
+    include ../components/blocks/slider/slider
+    include ../components/blocks/news/news
+    include ../components/blocks/about/about
+    include ../components/blocks/services/services
 
 block content
+    +slider([{url: './assets/images/slide.jpg', alt: 'Шнайдер Консалт'}])
+    .content
+        .content__wrap.container
+            +news()
+            .content__block
+                +about()
+                +services()
 
 block scripts

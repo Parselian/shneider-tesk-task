@@ -1,6 +1,6 @@
 module.exports = () => {
   $.gulp.task('sass', () => {
-    return $.gulp.src('dev/pug/components/**/*.scss') /* take .scss file */
+    return $.gulp.src('dev/pug/**/*.scss') /* take .scss file */
       .pipe($.gp.plumber())
       .pipe($.gp.concat('temp.scss'))
       .pipe($.gp.sourcemaps.init()) /* initialize sourcemaps */

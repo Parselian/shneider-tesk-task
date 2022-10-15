@@ -1,0 +1,31 @@
+.footer {
+  padding: 50px 0;
+  color: $alt-text-color;
+  background-color: $footer-bg-color;
+  &__wrap {
+    display: grid;
+    grid-template-columns: 350px 1fr 1fr;
+  }
+  &__copyright {
+    &-email {
+      color: $alt-text-color;
+    }
+  }
+  &__menu {
+    &-link {
+      display: block;
+      color: $alt-text-color;
+      text-decoration: underline;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__sign {
+    justify-self: flex-end;
+    &-link {
+      color: $alt-text-color;
+      text-decoration: underline;
+    }
+  }
+}

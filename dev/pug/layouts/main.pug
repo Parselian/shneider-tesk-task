@@ -1,5 +1,9 @@
 doctype html
 
+include ../components/blocks/header/header
+include ../components/blocks/main_menu/menu
+include ../components/blocks/footer/footer
+
 block mixins
 
 html(lang='ru-RU')
@@ -7,5 +11,16 @@ html(lang='ru-RU')
         link(rel='stylesheet' href='./assets/css/main.css')
         title My test page
     body
+        +header()
+        +menu([
+          {link: '#main', title: 'Главная'},
+          {link: '#catalog', title: 'Каталог'},
+          {link: '#delivery', title: 'Доставка и оплата'},
+          {link: '#pricelist', title: 'Прайс-лист'},
+          {link: '#contacts', title: 'Контакты'}
+        ])
+
         block content
+
+        +footer()
         block scripts

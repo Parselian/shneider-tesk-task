@@ -1,0 +1,30 @@
+.header {
+  padding-top: 45px;
+  padding-bottom: 55px;
+  background-color: $header-bg-color;
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__attention {
+    align-self: flex-start;
+    padding-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 17px;
+    color: $main-text-color;
+  }
+  &__contact {
+    text-align: right;
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 31px;
+    font-weight: 800;
+    color: $main-text-color;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mixin slider(slides)
+    .slider
+        .slider__slides
+            for slide in slides
+                img(src=slide.url alt=slide.alt).slider__slide

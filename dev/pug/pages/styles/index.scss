@@ -1,0 +1,11 @@
+.content {
+  margin-bottom: 190px;
+  &__wrap {
+    display: grid;
+    grid-template-columns: 350px 570px;
+    justify-content: space-between;
+  }
+  &__block {
+    padding-top: 20px;
+  }
+}

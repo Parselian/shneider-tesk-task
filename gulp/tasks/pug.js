@@ -1,6 +1,6 @@
 module.exports = () => {
   $.gulp.task('pug', () => {
-    return $.gulp.src('dev/pug/pages/*.pug') /* take .pug filed */
+    return $.gulp.src('dev/pug/pages/**/*.pug') /* take .pug filed */
       .pipe($.gp.pug({
         pretty: true /* disabling markup minification */
       }))

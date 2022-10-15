@@ -1,0 +1,11 @@
+include ../logo/logo
+
+mixin header()
+    .header
+        .header__wrap.container
+            +logo("./assets/images/logo.png", "Шнайдер Консалт")
+            .header__attention Распродажа до 15.02.16
+            .header__contacts
+                a(href="tel:+73432525252").header__contact +7 (343) 252-52-52
+                span.line-break
+                a(href="tel:+73432525252").header__contact +7 (343) 252-52-52

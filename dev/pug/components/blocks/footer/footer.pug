@@ -1,0 +1,14 @@
+mixin footer()
+    .footer
+        .footer__wrap.container
+            .footer__copyright.
+                &copy; 2012&mdash;2016 ЗАО &laquo;Компания&raquo; <br/>
+                #[a(href="mailto:info@name.ru").footer__copyright-email info@name.ru]
+            nav.footer__menu
+                a(href="#main").footer__menu-link Главная
+                a(href="#catalog").footer__menu-link Каталог
+                a(href="#delivery").footer__menu-link Доставка и оплата
+                a(href="#pricelist").footer__menu-link Прайс-лист
+                a(href="#contacts").footer__menu-link Контакты
+            .footer__sign.
+                #[a(href="http://www.schneider-consult.ru/" class="footer__sign-link") Разработка сайта] &mdash; <br/> компания &laquo;Шнайдер Консалт&raquo;

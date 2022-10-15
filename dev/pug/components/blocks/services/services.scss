@@ -1,0 +1,21 @@
+.services {
+  color: $main-text-color;
+  &__title {
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 270px);
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__block {
+    &-paragraph {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
